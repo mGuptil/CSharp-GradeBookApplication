@@ -40,7 +40,7 @@ namespace GradeBook.GradeBooks
                 stuNum = stuNum + 1;
             }
 
-            if (stuNum >= (totStu-per20))
+            if (stuNum > (totStu-per20))
             {
                 return 'A';
             }
@@ -48,7 +48,7 @@ namespace GradeBook.GradeBooks
             {
                 return 'B';
             }
-            else if ((totStu - 2*per20) > stuNum && stuNum > (totStu - per20 * 3))
+            else if ((totStu - 2*per20) >= stuNum && stuNum > (totStu - per20 * 3))
             {
                 return 'C';
             }
