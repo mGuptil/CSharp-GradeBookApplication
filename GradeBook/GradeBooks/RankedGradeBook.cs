@@ -44,11 +44,11 @@ namespace GradeBook.GradeBooks
             {
                 return 'A';
             }
-            else if ((totStu-per20) > stuNum && stuNum > (totStu-per20*2))
+            else if ((totStu-per20) >= stuNum && stuNum > (totStu-per20*2))
             {
                 return 'B';
             }
-            else if ((totStu - 2*per20) >= stuNum && stuNum > (totStu - per20 * 3))
+            else if ((totStu - 2*per20) > stuNum && stuNum > (totStu - per20 * 3))
             {
                 return 'C';
             }
